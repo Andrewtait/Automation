@@ -5,6 +5,7 @@ import time
 class Energenie():
   def gpiosetup(self):
     GPIO.setmode(GPIO.BOARD)
+    GPIO.setwarnings(False)
     GPIO.setup(11,GPIO.OUT)
     GPIO.setup(15,GPIO.OUT)
     GPIO.setup(16,GPIO.OUT)
